@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.left .heading {
+  margin: 0;
+}
+.hero_meta {
+  font-size: 24px;
+  color: #878e99 !important;
+  text-transform: uppercase;
+  font-weight: 100 !important;
+}
+.hero h2 {
+  font-size: 50px !important;
+  font-weight: bold;
+  color: #ff014f !important;
+}
+.hero h2 span {
+  color: black;
+}
+.hero p {
+  color: #878e99;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.hero_btn {
+  margin-top: 20%;
+}
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 15px;
+  margin: 30px 0 30px 0;
+  text-transform: uppercase;
+}
+.hero_btn button {
+  margin-right: 30px;
+}
+.hero_btn i {
+  font-size: 20px;
+}
+
+.hero_btn button img {
+  width: 20px;
+  height: 20px;
+}
+.hero .left {
+  margin-right: 10%;
+}
+.hero .right {
+  width: 40%;
+  position: relative;
+}
+.hero .right_img {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+  height: 580px;
+  width: 510px;
+  margin-top: 20%;
+}
+.hero .right_img img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 510px;
+}
+/* @MEDIA */
+
+@media (max-width: 1199px) {
+  .hero .hero_btn {
+    margin-top: 4%;
+  }
+  .hero .right,
+  .hero .left {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .hero .f_flex {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .hero .right_img {
+    width: 100%;
+    height: 54vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .hero_btn button {
+    margin-top: 20px;
+  }
+  .hero .left .heading {
+    margin-bottom: 0;
+  }
+  .hero h2 {
+    font-size: 34px !important;
+  }
+  .heading .sec__title {
+    font-size: 34px !important;
+  }
+  .heading .sec__meta {
+    font-size: 20px;
+  }
+  .hero_btn {
+    display: block;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .hero .right {
+    width: 340px;
+  }
+  .hero .right_img img {
+    right: 5%;
+    width: 300px;
+  }
+  .hero .right_img {
+    width: 100%;
+    height: 340px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 424px) {
+  .hero h2 {
+    font-size: 28px !important;
+  }
+  .hero .right {
+    width: 100%;
+  }
+  .heading .sec__title {
+    font-size: 28px !important;
+  }
+  .hero .right_img img {
+    right: 5%;
+    width: 265px;
+  }
+  .hero .right_img {
+    width: 100%;
+    height: 300px;
+  }
+}
