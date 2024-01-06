@@ -1,10 +1,10 @@
 header {
-  height: 10vh;
-}
-header .container {
-  padding-top: 15px;
-  text-align: center;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 0;
+  transition: 0.5s;
 }
 header ul li {
   margin-left: 30px;
@@ -43,14 +43,8 @@ header button {
   display: none;
 }
 .header.active {
-  height: 10vh;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
   background-color: #ecf0f3;
-  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
-  transition: 0.5s;
+  box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
 }
 .nav_wrap {
   display: flex;
@@ -58,7 +52,7 @@ header button {
   text-align: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header ul {
     padding-top: 30px;
   }
@@ -76,20 +70,20 @@ header button {
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     left: 0;
     top: 0;
-    transition: all 0.5s ease-in-out;
     width: 60%;
     height: 100vh;
     background-color: white;
     z-index: 888;
+    transition: 0.5ms;
   }
   header ul li {
     width: 100%;
-    transition: all 0.5s ease-in-out;
     text-transform: uppercase;
-    line-height: 70px;
+    line-height: 40px;
   }
   header .link {
     display: none;
+    position: relative;
   }
   .close,
   .open {
@@ -112,9 +106,6 @@ header button {
     width: 30px;
     height: 30px;
     line-height: 60px;
-  }
-  .header.active {
-    height: 10vh;
   }
 }
 

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import data from '../Hero/data.jsx';
@@ -23,6 +24,7 @@ const Home = () => {
                 <h4>{data.userSocial.sect_social}</h4>
                 {data.userSocial.skillIcon.map((item) => {
                     return (
+                      // eslint-disable-next-line react/jsx-key
                       <button className="btn_shadow">
                         {item.icons}
                       </button>
@@ -33,6 +35,7 @@ const Home = () => {
                 <h4>{data.userSkill.sect_skill}</h4>
                 {data.userSkill.skillImage.map((item) => {
                     return (
+                      // eslint-disable-next-line react/jsx-key
                       <button className="btn_shadow">
                         <img src={item.image} alt="img_skills" />
                       </button>

@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
+// eslint-disable-next-line react/prop-types
 export default function SectionHeader({ children, title, meta, titleClass, metaClass }) {
 
     return (

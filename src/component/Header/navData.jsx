@@ -1,7 +1,7 @@
  const data = [
     {
         title:'Home',
-        path:'/'
+        path:'#home'
     }, 
     {
         title:'Features',

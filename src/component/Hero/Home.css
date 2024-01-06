@@ -8,6 +8,7 @@
 }
 .left .heading {
   margin: 0;
+  margin-bottom: 15px !important;
 }
 .hero_meta {
   font-size: 24px;
@@ -41,7 +42,7 @@
   text-transform: uppercase;
 }
 .hero_btn button {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 .hero_btn i {
   font-size: 20px;
@@ -55,7 +56,7 @@
   margin-right: 10%;
 }
 .hero .right {
-  width: 40%;
+  width: 50%;
   position: relative;
 }
 .hero .right_img {
@@ -91,6 +92,11 @@
   .hero .right_img {
     width: 100%;
     height: 54vh;
+  }
+}
+@media (max-width: 768px) {
+  .hero .right_img img {
+    width: 440px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -139,7 +145,7 @@
   }
   .hero .right_img img {
     right: 5%;
-    width: 265px;
+    width: 270px;
   }
   .hero .right_img {
     width: 100%;

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import SectionHeader from '../common/SectionHeader';
@@ -7,7 +8,7 @@ import datas from './data.jsx';
 var testimonialItem = datas.items
 const Testimonial = () => {
 
-  const [data, setdata] = useState(testimonialItem);
+  const [data] = useState(testimonialItem);
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const Testimonial = () => {
 
   return (
     <>
-     <section className="Testimonial" id="clients">
+     <section className="Testimonial top" id="clients">
         <div className="container">
             <div className="testimonial_heading">
                <SectionHeader meta={data.meta }  title={data.title}  />

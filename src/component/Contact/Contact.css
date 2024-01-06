@@ -58,6 +58,12 @@
 .Contact .right button svg {
   margin-left: 10px;
 }
+@media (max-width: 1024px) {
+  .Contact .left,
+  .Contact .right {
+    width: 47%;
+  }
+}
 @media (max-width: 768px) {
   .Contact .d_flex {
     flex-direction: column;
